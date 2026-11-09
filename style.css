@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background-color: #102a4c;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #8bb8ed;
+}
+
+#home {
+    background-color: #f3f7fc;
+    padding: 100px 0;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #477db8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.home-text h1 span {
+    color: #477db8;
+}
+
+.home-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #102a4c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #477db8;
+}
+
+.profile-circle {
+    width: 220px;
+    height: 220px;
+    background-color: #102a4c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #102a4c;
+    margin-bottom: 35px;
+}
+
+#about {
+    text-align: center;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    color: #64748b;
+}
+
+#skills {
+    background-color: #f3f7fc;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #102a4c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.info-card {
+    background-color: #f3f7fc;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #477db8;
+    border-radius: 5px;
+}
+
+.info-card h3 {
+    color: #102a4c;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #64748b;
+}
+
+#projects {
+    background-color: #f3f7fc;
+}
+
+.projects-list {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 30px;
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid #dce5f0;
+}
+
+.project-card h3 {
+    color: #102a4c;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #64748b;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 25px;
+    color: #64748b;
+}
+
+footer {
+    background-color: #102a4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .container {
+        width: 92%;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    #home {
+        padding: 60px 0;
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 34px;
+    }
+
+    .home-text h2 {
+        font-size: 19px;
+    }
+
+    .profile-circle {
+        width: 160px;
+        height: 160px;
+        font-size: 65px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .skills-list {
+        gap: 10px;
+    }
+
+    .skill {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .projects-list {
+        flex-direction: column;
+    }
+
+}
